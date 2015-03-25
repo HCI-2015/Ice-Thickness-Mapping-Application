@@ -11,6 +11,7 @@
     <meta name="layout" content="site"/>
     <r:require modules="bootstrap"/>
     <title>Submission Page</title>
+    <asset:javascript src="geoloc.js"/>
 </head>
 
 <body>
@@ -19,6 +20,10 @@
         <h1 class="text-center">Ice Thickness Mapping</h1>
     </div>
 </div>
+<div id="latlong-out"></div>
+<div id="map-canvas" style="width:400px; height:250px"></div>
+<script>geoFindMe()</script>
+<br/>
 &nbsp;Ice Thickness Measurement: <g:textField name="measurementfull" size="4" /> <g:textField name="measurementdecimal" size="4" />
 <br/>
 &nbsp;Accuracy of Measurement:&nbsp;&nbsp;Exact Measurement&nbsp;<g:radio name="estimation" value="Exact"/>   &nbsp;Estimated Measurement&nbsp;<g:radio name="estimation" value="Estimated"/>
@@ -32,5 +37,6 @@
 &nbsp;Additional Information: <br/>
 <g:textArea name="info"></g:textArea>
 <br/>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 </body>
 </html>
