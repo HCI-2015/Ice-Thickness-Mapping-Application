@@ -17,7 +17,7 @@
 <body>
 <div class="jumbotron jumb-margin">
     <div class="container">
-        <h1 class="text-center">Ice Thickness Mapping</h1>
+        <h2 class="text-center">Ice Thickness Mapping</h2>
     </div>
 </div>
 <div id="latlong-out"></div>
