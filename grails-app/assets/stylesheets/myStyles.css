@@ -1,0 +1,9 @@
+body{
+    margin: auto;
+    height: inherit;
+    max-width: inherit;
+}
+/* Might want to move the Jumbotron by adding top margin */
+.jumbotron{
+    margin-top: 0px;
+}
