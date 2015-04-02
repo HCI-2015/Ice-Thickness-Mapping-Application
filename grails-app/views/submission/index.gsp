@@ -16,38 +16,50 @@
 
 <body>
 <div class="jumbotron jumb-margin">
-    <div class="container" height="200">
+    <div class="container" height="150">
         <h2 class="text-center">Ice Thickness Mapping</h2>
     </div>
 
 </div>
 <div id="latlong-out"></div>
-<div id="map-canvas" style="width:400px; height:250px"></div>
+<div id="map-canvas" style="width:300px; height:250px"></div>
 <script>geoFindMe()</script>
 <br/>
-&nbsp;Ice Thickness Measurement: <g:textField name="measurementfull" size="4" /> <g:textField name="measurementdecimal" size="4" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ice Thickness Measurement <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<g:textField name="measurementfull" size="4" /> <g:textField name="measurementdecimal" size="4" />
 <br/>
-&nbsp;Accuracy of Measurement:&nbsp;&nbsp;Exact Measurement&nbsp;<g:radio name="estimation" value="Exact"/>   &nbsp;Estimated Measurement&nbsp;<g:radio name="estimation" value="Estimated"/>
 <br/>
-&nbsp;Measurement Device:
+<div class="cc-selector">
+    <input id="visa" type="radio" name="credit-card" value="visa" />
+    <label class="drinkcard-cc exact" for="visa"></label>
+    <input id="mastercard" type="radio" name="credit-card" value="mastercard" />
+    <label class="drinkcard-cc est"for="mastercard"></label>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Measurement Device
 <br/>
-&nbsp;Estimated % of Lake Covered:&nbsp;<g:textField name="percentage" size="4" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimated % of Lake Covered
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<g:textField name="percentage" size="4" />
 <br/>
-&nbsp;Texture of Ice: Rugged&nbsp;<g:radio name="texture" value="rugged"/>   &nbsp;Smooth&nbsp;<g:radio name="texture" value="smooth"/> &nbsp;Snow Covered&nbsp;<g:radio name="texture" value="snow"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Texture of Ice
 <br/>
-&nbsp;Additional Information: <br/>
-<g:textArea name="info"></g:textArea>
+<div class="cc-selector">
+    <input id="text" type="radio" name="texture" value="snowcov" />
+    <label class="drinkcar-cc snow" for="text"></label>
+    <input id="text2" type="radio" name="texture" value="smoothcov" />
+    <label class="drinkcar-cc smooth"for="text2"></label>
+    <input id="text3" type="radio" name="texture" value="smoothcov" />
+    <label class="drinkcar-cc rug"for="text3"></label>
+</div>
 <br/>
 <!-- Simple get location -->
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <br/>
 <ul id="topnav">
-    <li id="topnav-1"><a href="http://i.imgur.com/4bCaJLv.jpg" title="Add Measurement">Home</a></li>
-    <li id="topnav-2"><a href="http://i.imgur.com/2pTZx6x.jpg" title="My Profile">S</a></li>
-    <li id="topnav-3"><a href="http://i.imgur.com/cGwKeQ9.jpg" title="Map">About Us</a></li>
-    <li id="topnav-4"><a href="http://i.imgur.com/AdvuIDa.jpg" title="Settings">Contact Us</a></li>
-    <li id="topnav-5"><a href="http://i.imgur.com/CbwiLdj.jpg" title="About">Contact</a></li>
+    <li id="topnav-1"><a href="cs4760progassign/index" title="H">Home</a></li>
+    <li id="topnav-3"><a href="http://i.imgur.com/cGwKeQ9.jpg" title="About Us">About Us</a></li>
+    <li id="topnav-4"><a href="http://i.imgur.com/AdvuIDa.jpg" title="Contact Us">Contact Us</a></li>
+    <li id="topnav-5"><a href="http://i.imgur.com/CbwiLdj.jpg" title="Contact ">Contact</a></li>
 </ul>
 </body>
 
