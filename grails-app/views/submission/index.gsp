@@ -266,10 +266,10 @@
                     <button class="tb1" onclick="check()">Submit</button>
 
                     <ul id="topnav">
-                        <li id="topnav-1"><a href="http://cshci-dev.mtu.edu:8081/Ice-Thickness/map" title="H">Home</a></li>
-                        <li id="topnav-3"><a href="http://cshci-dev.mtu.edu:8081/Ice-Thickness/submission" title="About Us">About Us</a></li>
-                        <li id="topnav-4"><a href="http://cshci-dev.mtu.edu:8081/Ice-Thickness/settings" title="Contact Us">Contact Us</a></li>
-                        <li id="topnav-5"><a href="http://cshci-dev.mtu.edu:8081/Ice-Thickness/help" title="Contact ">Contact</a></li>
+                        <li id="topnav-1"><a href='/Ice-Thickness/map' title="H">Map Location</a></li>
+                        <li id="topnav-3"><a href='/Ice-Thickness/submission' title="About Us">Submission</a></li>
+                        <li id="topnav-4"><a href='/Ice-Thickness/settings' title="Contact Us">Setting</a></li>
+                        <li id="topnav-5"><a href='/Ice-Thickness/help' title="Contact ">Help</a></li>
                     </ul>
 </center>
 </body>
