@@ -140,6 +140,11 @@ ul#topnav  li#topnav-5 a.current {
 .smooth{background-image:url(http://i.imgur.com/f99Uvqm.jpg);}
 .rug{background-image:url(http://i.imgur.com/Skh70S5.jpg);}
 .snow{background-image:url(http://i.imgur.com/KZIEMKp.jpg);}
+.standard{background-image:url(http://i.imgur.com/ZHOFaow.jpg);}
+.metric{background-image:url(http://i.imgur.com/13P1BqO.jpg);}
+.tape{background-image:url(http://i.imgur.com/nWGHZOj.jpg);}
+.other{background-image:url(http://i.imgur.com/nVRH5TN.jpg);}
+
 
 .cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .cc-selector input:checked +.drinkcard-cc{
@@ -191,6 +196,6 @@ ul#topnav  li#topnav-5 a.current {
     -moz-filter: none;
     filter: none;
 }
-.tb1 {
+.tb1{
     color: black;
 }
